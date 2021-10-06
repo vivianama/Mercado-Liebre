@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet"/>  
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <title>Mercado Liebre</title>
+</head>
+<header></header>
+<main>
+    <h1>Registra tu cuenta!</h1>
+
+    <!---Formulario--->
+    <form action="/resultadoRegister" method="POST">
+        <label for="nombre">Nombre y Apellido</label><br>
+        <input type="text" name="nombre" id="nombre" placeholder="" required><br>
+        <label for="usuario">Nombre de Usuario</label><br>
+        <input type="text" name="usuario" placeholder="" required><br>
+        <label for="email">E-mail</label><br>
+        <input type="email" name="email" id="email" placeholder="" required> <br>
+        <label for="fechaDeNacimiento">Fecha de Nacimiento</label><br>
+        <input type="date" id="fechaDeNacimiento" name="fechaDeNacimiento"><br>
+        <label for="perfilUsuario">Perfil de Usuario</label><br>
+        <input type = "radio" id="perfilUsuario" name="perfilUsuario" value= "comprador">
+        <label for="perfilUsuario">Comprador</label><br>
+        <input type = "radio" id="perfilUsuario" name="perfilUsuario" value= "vendedor">
+        <label for="perfilUsuario">Vendedor</label><br>
+        <label for="intereses">Intereses</label><br>
+        <label for="intereses">Electro </label>
+        <input type = "checkbox" id="intereses" name="intereses" value= "electro"><br>
+        <label for="intereses">Moda </label>
+        <input type = "checkbox" id="intereses" name="intereses" value= "moda"><br>
+        <label for="intereses">Hogar </label>
+        <input type = "checkbox" id="intereses" name="intereses" value= "hogar"><br>
+        <label for="intereses">Juguetería </label>
+        <input type = "checkbox" id="intereses" name="intereses" value= "jugueteria"><br>
+        <label for="intereses">Vida Sana </label>
+        <input type = "checkbox" id="intereses" name="intereses" value= "vidaSana"><br>
+
+        <button type="submit" href="./">Enviar</button>
+        <button type="reset">Borrar</button>
+        <button type="button" href="./">Volver</button>
+        
+    </form>
+
+</main>
+<footer></footer>
