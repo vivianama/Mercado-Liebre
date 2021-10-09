@@ -35,4 +35,4 @@ app.post('/resultadoRegister', function(req, res){
 	
 })
 
-app.listen(3000, ()=> console.log("servidor corriendo"))
+app.listen(3000, ()=> console.log("Servidor corriendo en puerto 3000."))

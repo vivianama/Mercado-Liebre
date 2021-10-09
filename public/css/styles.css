@@ -1,55 +1,87 @@
 
 *{
-    margin: 0px;
-    padding: 0px;
+    margin: 0px ;
+    padding: 0px ;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    
     
    }
 header{
     background-color: #EAC926;
-    font-family: 'Roboto', sans-serif;
-    align-items: center;    
+    margin: 0px auto;
 }
-.secBusqueda{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
+
 main{
-    font-family: 'Roboto', sans-serif;
-    color: slateblue;
     background-color: #ebebeb;
-    width: 90%;
- 
+    justify-content: center; 
+    padding: 0px auto;
+    margin: 0px auto; 
 }
 p{
     font-size: 12px;
-    
-    
    
+}
+
+.pBold{
+    font-weight: bold;
+    
 }
 h2{
     font-size: 24px;
     color: #666;    
     text-align: center;
+    font-weight: bold;
 }
 
-.precios{
-    font-size: 18px;
-    flex-grow: 30;
-  
+nav{
+    display: none;
     
     
 }
-.descuentos-descripciones{
+
+.conteinerInfo{
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+   
+}
+.precios{
+   
+    font-size: 18px;
+    color: #666;
+    font-weight: bold; 
+    padding: 10px;
+         
+
+}
+
+.descuentos{
     font-size: 16px;
     text-align: left;
-    flex-grow: 70;
+    padding: 10px;
+    color: #39b54a;
+    
+  
+}
+.descuentos-descripciones{
+ 
+    font-size: 16px;
+    text-align: left;
+    color: #666;
+    padding: 10px;
+   
+   
+   
+ 
   
 }
 
+
 .burger-menu{
-    background-color: blue;
+    background-color: #1259c3;
     text-align: center;
     margin:auto;
     width: 28px;
@@ -59,73 +91,54 @@ h2{
     
 }
 
-.footer{
-    text-align: -web;
-    color: #666;
-    font-family: 'Roboto', sans-serif;
-    text-align: -webkit-center;
-}
-
-i {
-    color: green;
-
-}
-
-
-
 
 li{
    
-    list-style: none;
+    list-style: none;  
  }
-.lifooter{
-    list-style: none;
+.liFooter{
+      
+    margin-bottom: 10px;
+    padding: 10px;
     text-align: -webkit-center;
-     
-    
+    color: #666;
+   
 }
 .descripcion{
- 
+display: none; 
 border-top: solid 1px ebebeb;
-display: none;
-padding: 15px;
-margin: auto;
+padding: 20px ;
+margin:  0px auto;
 border: 1px solid #ebebeb;
-text-align: left;
+/* text-align: left; */
 position:relative;
 background-size: cover;
 transition-property: all;
 transition-duration: infinite;
+width:inherit;
+
 
 }
 .descripcion:hover{
        
     display: initial;
-    padding: 200px;
+   
  
 }
 
 
 
-ul{
-    
-    padding: 0px;
-}
 
 
 .divCenter{
     text-align: center;
     
 }
-.iconoFooter{
-    color: blue;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 2em;
-    height: auto;
-    text-align: -webkit-center; 
 
 
+.iconoFooter{ 
+    color: #1259c3; 
+    width: 300px;
 }
 
 
@@ -137,24 +150,30 @@ ul{
 
 .busqueda{
     width: 50%;
+    position: relative;
+    margin: 0px auto;
 }
 
 .conteiner{
+  
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: stretch;
+    
+    width: 90%;
+    margin: 10px auto;
+    
+   
+
+    
     
 }
 article{
     background-color: white;
-    margin: 10px;
+    margin: 10px auto;
     display: flex;
-    flex-direction:column;
-    flex-wrap: wrap;
-    
-    align-items: stretch;
+     flex-direction:column;
+    flex-wrap: wrapp;
+    position: relative; 
+   /*  align-items: stretch; */
     width: 100%;
     height: 100%;
     
@@ -163,7 +182,7 @@ article{
 }
 
 main section article i{
-    display: block;
+    display: flex;
     font-size: 16px;
     padding: 5px;
     width: 30px;
@@ -176,10 +195,10 @@ main section article i{
     top: -15px;
 }
 .banner{
-font-display: ;
+font-display:flex ;
 background-color: turquoise;
-width: 100px;
-height: 50px;
+width: 100%;
+height: 100%;
 
 }
 
@@ -200,11 +219,21 @@ img{
     padding: 0px;
     align-self: center;
     align-items: stretch;
-flex-grow: 1;
+
 }
 @media (min-width: 361px){
+    nav{
+        
+        display: -webkit-inline-box;
+        width: 100%;
+        
+    }
+    .burger-menu{
+        display: none;
+    }
     .descripcion {
     display: initial;
+   
     
     }
 
@@ -214,8 +243,12 @@ flex-grow: 1;
         
     }
     article{
+        
         box-shadow: 0px 0px 10px rgb(100,100,100);
-    }    
+        
+        
+    } 
+
     
 }
 @media (min-width: 769){
@@ -264,6 +297,56 @@ form {
     font-size: 40px;
     
 }
-    
-   
 
+.camion{
+    color: #39b54a;
+}
+
+
+
+section.Secbusqueda {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.inputBusqueda{
+    align-self:stretch;
+    width: 80%;
+
+}
+
+.divBusqueda{
+    width: 50%;
+}
+
+.compraCuota{
+    width:100%;
+    text-align: center;
+}
+
+ .ulIzquierda{
+   
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 50%;
+
+}
+
+.ulDerecha{
+
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ justify-content: flex-end;
+ justify-self: self-end;
+ justify-items: self-end;
+ width: 50%;
+} 
+
+.conteinerArticulo{
+    width: 50%;
+    margin: 0px auto;
+   
+}
