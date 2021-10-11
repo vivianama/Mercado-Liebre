@@ -25,6 +25,7 @@ p{
 
 .pBold{
     font-weight: bold;
+    width: 100%;
     
 }
 h2{
@@ -43,8 +44,9 @@ nav{
 .conteinerInfo{
     
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: flex-start;
     
    
 }
@@ -71,7 +73,8 @@ nav{
     font-size: 16px;
     text-align: left;
     color: #666;
-    padding: 10px;
+    padding: 5px;
+    opacity: 0;
    
    
    
@@ -102,12 +105,21 @@ li{
     padding: 10px;
     text-align: -webkit-center;
     color: #666;
+    width: 100%;
    
+}
+.liFooter2{
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: -webkit-center;
+    color: #666;
+    width: 100%;
+
 }
 .descripcion{
 display: none; 
 border-top: solid 1px ebebeb;
-padding: 20px ;
+padding: 20px 5px ;
 margin:  0px auto;
 border: 1px solid #ebebeb;
 /* text-align: left; */
@@ -119,12 +131,7 @@ width:inherit;
 
 
 }
-.descripcion:hover{
-       
-    display: initial;
-   
- 
-}
+
 
 
 
@@ -139,6 +146,10 @@ width:inherit;
 .iconoFooter{ 
     color: #1259c3; 
     width: 300px;
+}
+
+.iconoFooter:hover{
+    color:#39b54a;
 }
 
 
@@ -157,7 +168,7 @@ width:inherit;
 .conteiner{
   
     display: flex;
-    
+    flex-wrap: wrap;
     width: 90%;
     margin: 10px auto;
     
@@ -182,7 +193,7 @@ article{
 }
 
 main section article i{
-    display: flex;
+    /* display: flex; */
     font-size: 16px;
     padding: 5px;
     width: 30px;
@@ -221,7 +232,47 @@ img{
     align-items: stretch;
 
 }
+article{
+    box-shadow: 0px 0px 10px rgba(100,100,100,0);
+
+}
+
+article:hover{
+     
+    box-shadow: 0px 0px 10px rgba(100,100,100,1);
+    
+}
 @media (min-width: 361px){
+   
+    .descripcion {
+    display: initial;
+   
+    
+    }
+    .descripcion:hover{
+       
+    display: initial;
+   
+ 
+}
+
+    p{
+        display: initial;
+        text-align: left;
+        
+    }
+
+  
+
+    
+
+    .conteinerArticulo{
+        max-width: 45%;
+     } 
+
+    
+}
+@media (min-width: 768px){
     nav{
         
         display: -webkit-inline-box;
@@ -231,31 +282,10 @@ img{
     .burger-menu{
         display: none;
     }
-    .descripcion {
-    display: initial;
-   
     
-    }
-
-    p{
-        display: initial;
-        text-align: left;
-        
-    }
-    article{
-        
-        box-shadow: 0px 0px 10px rgb(100,100,100);
-        
-        
-    } 
-
-    
-}
-@media (min-width: 769){
-    .descripcion {
-        
-        display: initial;
-    }    
+    .conteinerArticulo{
+        max-width: 20%;
+     }
         
     
 }
@@ -300,6 +330,10 @@ form {
 
 .camion{
     color: #39b54a;
+}
+.fa-truck:hover{
+    
+    transform: rotate(90deg);
 }
 
 
@@ -346,7 +380,24 @@ section.Secbusqueda {
 } 
 
 .conteinerArticulo{
-    width: 50%;
-    margin: 0px auto;
+
+    margin: 10px auto;
    
+}
+
+@media (min-width: 1024px){
+    ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .liFooter{
+       width:25% ;
+    }
+   
+}
+
+.descuentos-descripciones:hover{
+    opacity: 1;
 }
