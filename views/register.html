@@ -53,11 +53,11 @@
         <form action="/resultadoRegister" method="POST">
             
             <input  class="inputText"type="text" name="nombre" id="nombre" placeholder="Nombre y Apellido" required><br>
-            <input class="inputText" type="text" name="usuario" placeholder="Nombre de usuario " required><br>
-            
+            <input class="inputText" type="text" name="usuario" placeholder="Nombre de usuario " required minlength="2"><br> 
             <input  class="inputText" type="email" name="email" id="email" placeholder="E-mail" required> <br>
             <h3 for="fechaDeNacimiento">Fecha de Nacimiento</h3>
             <input  class="inputDate" type="date" id="fechaDeNacimiento" name="fechaDeNacimiento"><br>
+            <input  class="inputText" type="text" name="domicilio" id="domicilio" placeholder="Domicilio" required> <br>
             <h3 for="perfilUsuario">Perfil de Usuario</h3>
             <div class="alineacionItem">
                 <input  class="inputRadioCheck" type = "radio" id="perfilUsuario" name="perfilUsuario" value= "comprador">
@@ -78,7 +78,12 @@
                 <input type = "checkbox" id="intereses" name="intereses" value= "vidaSana">
                 <label class="labelRadioCheck" for="intereses">Vida Sana </label><br>
             </div>
-            <button class= "botonEnviar" type="submit" href="./">Enviar</button>
+            <input  class="inputText"type="file" name="foto" id="foto" placeholder="Ingresa tu foto" ><br>
+            <input  class="inputText"type="password" name="password" id="password" placeholder="Contraseña" required><br>
+            <input  class="inputText"type="password" name="password" id="password" placeholder="Repetir Contraseña" required><br>
+           
+
+            <button class= "botonEnviar" type="submit" href="./resultadoRegister">Enviar</button>
             <button class="botonBorrar" type="reset">Borrar</button>
         </form>
     </div>

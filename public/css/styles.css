@@ -80,7 +80,8 @@ nav{
     font-size: 18px;
     color: #666;
     font-weight: bold; 
-    padding: 10px;
+    padding: 5px;
+    width: 50%;
          
 
 }
@@ -88,8 +89,9 @@ nav{
 .descuentos{
     font-size: 16px;
     text-align: left;
-    padding: 10px;
+    padding: 5px;
     color: #39b54a;
+    width: 50%;
     
   
 }
@@ -144,7 +146,7 @@ li{
 .descripcion{
 display: none; 
 border-top: solid 1px ebebeb;
-padding: 20px 5px ;
+padding: 10px 5px ;
 margin:  0px auto;
 border: 1px solid #ebebeb;
 /* text-align: left; */
@@ -303,8 +305,11 @@ article:hover{
     }
     
     .conteinerArticulo{
-        max-width: 20%;
+        max-width: 23%;
      }
+    .precios{
+        font-size:16px;
+    }
         
     
 }
@@ -357,7 +362,7 @@ section.Secbusqueda {
 }
 .inputBusqueda{
     align-self:stretch;
-    width: 80%;
+    width: 79%;
 
 }
 
@@ -407,7 +412,17 @@ section.Secbusqueda {
     .liFooter{
        width:25% ;
     }
-   
+   .compraCuota{
+       width: 25%;
+   }
+   .img-logo{
+    width: 25%; 
+    height: 25%;
+    }
+    .divBusqueda{
+        width:30%;
+    }
+    
 }
 
 .descuentos-descripciones:hover{
@@ -429,7 +444,7 @@ section.Secbusqueda {
 }
 
 .botonEnviar{
-    background-color: #1259c3;
+    background-color: #666;
     width: 70%;
     margin:15px;
     font-weight:bold;
@@ -437,6 +452,11 @@ section.Secbusqueda {
     border: #1259c3;
     padding: 1%;
     color:white;
+}
+
+.botonEnviar:hover{
+    background-color: #0022AA;
+    ;
 }
 
 .botonBorrar{
@@ -465,4 +485,8 @@ section.Secbusqueda {
 .alineacionItem{
     text-align: left;
     width: 70%;
+}
+
+.formSearch{
+    width: 100%;
 }

@@ -35,4 +35,14 @@ app.post('/resultadoRegister', function(req, res){
 	
 })
 
+app.post('/resultadoLogin', function(req, res){
+	res.redirect('./')
+	
+})
+
+app.post('/resultadoSearch', function(req, res){
+	res.redirect('./')
+	
+})
+
 app.listen(3000, ()=> console.log("Servidor corriendo en puerto 3000."))

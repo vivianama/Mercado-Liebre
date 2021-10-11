@@ -15,9 +15,13 @@
 <header>
     <section class="Secbusqueda">
         <img class= "img-logo" src="./images/logo-mercado-liebre.svg" alt="Logo de mercadoliebre"/>
-        <div class="divBusqueda">   
+        <div class="divBusqueda"> 
+            <form action="/resultadoSearch" method="POST">  
             <input class="inputBusqueda"  type="search" placeholder="Buscar productos, marcas">
-            <i class="fas fa-search"></i>
+            <button type="submit" href="./resultadoSearch">
+            <i class="fas fa-search" ></i>
+        </button>
+            </form>
         </div>
         <div class="compraCuota"><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</div> 
     </section>
