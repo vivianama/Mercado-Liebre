@@ -43,12 +43,12 @@ app.post('/resultadoLogin', function(req, res){
 app.post('/resultadoSearch', function(req, res){
 	res.redirect('./')
 	
-})
+});
 
 
-/* Este cambio es para Heroku
+/**  Este cambio es para Heroku
 app.listen(3000, ()=> console.log("Servidor corriendo en puerto 3000.")) */
-
+ 
 app.listen(process.env.PORT || 3000, function(){
-	console.log('Servidor corriendo en el puerto 3000.');
-}
+	console.log('Servidor corriendo en el puerto 3000.')
+})
