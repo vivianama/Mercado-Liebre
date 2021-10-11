@@ -3,8 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
+
+  /* Esta modificacion es para Herocu 
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  }, */
+
+  "scripts": {
+    "start": "node app.js"
   },
   "author": "",
   "license": "ISC"
