@@ -9,18 +9,77 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
     <title>Mercado Liebre</title>
 </head>
-<header></header>
+<body>
+    <header>
+        <section class="Secbusqueda">
+            <img class= "img-logo" src="./images/logo-mercado-liebre.svg" alt="Logo de mercadoliebre"/>
+            <div class="divBusqueda">   
+                <input class="inputBusqueda"  type="search" placeholder="Buscar productos, marcas">
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="compraCuota"><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</div> 
+        </section>
+        <nav>
+        <ul class="ulIzquierda">
+            <li><a href="">Ofertas</li>
+            <li><a href="">Tiendas Oficiales</a></li>
+            <li><a href="">Vender</a></li>
+        </ul>
+        <ul class="ulDerecha">
+            <li>
+                <a href="./register">Creá tu cuenta</a>
+                <i class="far fa-address-card"></i>
+            </li>
+            <li>
+                <a  href="./login">Ingresá</a>
+                <i class="fas fa-sign-in-alt"></i>
+            </li>
+            <li>
+                <a href="">Mis Compras</a>
+                <i class="fas fa-shopping-basket"></i>
+            </li>
+        </ul>
+        </nav>
+        <div class="burger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class= "divBanner">
+                <img class="banner" src="./images/img-home-banner.jpg" alt="Banner separador"  /> 
+        </div>
+    </header>
 <main>
-    <h1>Ingresa a tu cuenta!</h1>
-    <form action="/resultadoRegister" method="POST">
-       
-        <label for="usuario">Nombre de Usuario</label><br>
-        <input type="text" name="usuario" placeholder="" required><br>
-        <label for="password">Contraseña</label><br>
-        <input type="password" name="password" placeholder="" required><br>
-        
-        <button type="submit" href="./">Enviar</button>
-        <button type="reset">Borrar</button>
-    </form>
+    <div class="formulario">
+        <h2>Ingresa a tu cuenta!</h2>
+        <form action="/resultadoRegister" method="POST">
+            <input class="inputText" type="text" name="usuario" placeholder="Nombre de Usuario" required><br>
+            <input class="inputText" type="password" name="password" placeholder="Contraseña" required><br>     
+            <button class="botonEnviar" type="submit" href="./">Enviar</button>
+            
+        </form>
+    </div>
 </main>
-<footer></footer>
+<footer>
+    <ul>
+    <li class= "liFooter">     
+            <div class="iconoFooter"><i class="fas fa-credit-card"></i></div>
+            <p class="pBold">Pagá con tarjeta o en efectivo</p><br>
+            <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+            puntos de pago. ¡Y siempre es seguro!</p>
+        </li>
+        <li class= "liFooter">
+            <div class="iconoFooter"><i class="fas fa-gift" ></i></div>
+            <p class="pBold">Envío gratis desde $ 2.500</p><br>
+            <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+        productos. Es un beneficio de Mercado Puntos.</p>
+        </li>
+        <li class= "liFooter">
+            <div class="iconoFooter"><i class="fas fa-user-shield"></i></div>
+            <p class="pBold">Seguridad, de principio a fin</p><br>
+            <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+            porque estás siempre protegid@.</p>
+        </li><br>
+        <li class= "liFooter2"><p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p></li>
+    </ul>
+</footer>
+</body>
+</html>
