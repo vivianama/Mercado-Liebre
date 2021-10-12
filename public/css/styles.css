@@ -317,6 +317,7 @@ article:hover{
 a{
     text-decoration: none;
     font-size: 12px;
+    font-weight: bold;
     
 }
 
@@ -378,6 +379,7 @@ section.Secbusqueda {
 .compraCuota{
     width:100%;
     text-align: center;
+    font-size: 12px;
 }
 
  .ulIzquierda{

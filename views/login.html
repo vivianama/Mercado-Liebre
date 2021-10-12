@@ -10,43 +10,47 @@
     <title>Mercado Liebre</title>
 </head>
 <body>
-    <header>
-        <section class="Secbusqueda">
-            <img class= "img-logo" src="./images/logo-mercado-liebre.svg" alt="Logo de mercadoliebre"/>
-            <div class="divBusqueda">   
-                <input class="inputBusqueda"  type="search" placeholder="Buscar productos, marcas">
-                <i class="fas fa-search"></i>
-            </div>
-            <div class="compraCuota"><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</div> 
-        </section>
-        <nav>
-        <ul class="ulIzquierda">
-            <li><a href="">Ofertas</li>
-            <li><a href="">Tiendas Oficiales</a></li>
-            <li><a href="">Vender</a></li>
-        </ul>
-        <ul class="ulDerecha">
-            <li>
-                <a href="./register">Creá tu cuenta</a>
-                <i class="far fa-address-card"></i>
-            </li>
-            <li>
-                <a  href="./login">Ingresá</a>
-                <i class="fas fa-sign-in-alt"></i>
-            </li>
-            <li>
-                <a href="">Mis Compras</a>
-                <i class="fas fa-shopping-basket"></i>
-            </li>
-        </ul>
-        </nav>
-        <div class="burger-menu">
-            <i class="fas fa-bars"></i>
+   <header>
+    <section class="Secbusqueda">
+        <img class= "img-logo" src="./images/logo-mercado-liebre.svg" alt="Logo de mercadoliebre"/>
+        <div class="divBusqueda"> 
+            <form class="formBusqueda" action="/resultadoSearch" method="POST">  
+            <input class="inputBusqueda"  type="search" placeholder="Buscar productos, marcas">
+            <button  class = "botonBusqueda" type="submit" href="./resultadoSearch">
+            <i class="fas fa-search" ></i>
+        </button>
+            </form>
         </div>
-        <div class= "divBanner">
-                <img class="banner" src="./images/img-home-banner.jpg" alt="Banner separador"  /> 
-        </div>
-    </header>
+        <div class="compraCuota"><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</div> 
+    </section>
+    <nav>
+    <ul class="ulIzquierda">
+        <li><a href="">Ofertas</li>
+        <li><a href="">Tiendas Oficiales</a></li>
+        <li><a href="">Vender</a></li>
+    </ul>
+    <ul class="ulDerecha">
+        <li>
+            <a href="./register">Creá tu cuenta</a>
+            <i class="far fa-address-card"></i>
+        </li>
+        <li>
+            <a  href="./login">Ingresá</a>
+            <i class="fas fa-sign-in-alt"></i>
+        </li>
+        <li>
+            <a href="">Mis Compras</a>
+            <i class="fas fa-shopping-basket"></i>
+        </li>
+    </ul>
+   </nav>
+   <div class="burger-menu">
+        <i class="fas fa-bars"></i>
+    </div>
+    <div class= "divBanner">
+            <img class="banner" src="./images/img-home-banner.jpg" alt="Banner separador"  /> 
+    </div>
+</header>
 <main>
     <div class="formulario">
         <h2>Ingresa a tu cuenta!</h2>
