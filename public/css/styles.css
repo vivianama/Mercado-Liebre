@@ -172,7 +172,7 @@ width:inherit;
 
 .iconoFooter{ 
     color: #1259c3; 
-    width: 300px;
+   width: 2em;
 }
 
 .iconoFooter:hover{
@@ -316,6 +316,7 @@ article:hover{
 
 a{
     text-decoration: none;
+    font-size: 12px;
     
 }
 
@@ -362,9 +363,13 @@ section.Secbusqueda {
 }
 .inputBusqueda{
     align-self:stretch;
-    width: 79%;
+    width: 83%;
+    border: hidden;
+    border-radius: 3px;
+    padding: 5px;
 
 }
+
 
 .divBusqueda{
     width: 50%;
@@ -382,6 +387,7 @@ section.Secbusqueda {
     flex-wrap: wrap;
     justify-content: flex-start;
     width: 50%;
+    margin-right: 2%;
 
 }
 
@@ -394,6 +400,7 @@ section.Secbusqueda {
  justify-self: self-end;
  justify-items: self-end;
  width: 50%;
+ margin-left: 10px;
 } 
 
 .conteinerArticulo{
@@ -469,6 +476,14 @@ section.Secbusqueda {
     padding: 1%;
   
     color:1259c3;
+}
+
+.botonBusqueda{
+    position: relative;
+    left:-18px;
+    border: hidden;
+    border-radius: 3px;
+    background-color: white;
 }
 
 .inputDate{
