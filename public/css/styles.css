@@ -507,3 +507,32 @@ section.Secbusqueda {
 .formSearch{
     width: 100%;
 }
+
+
+.botonEnviarRegistro{
+    background-color: #666;
+    width: 33.5%;
+    margin:15px;
+    font-weight:bold;
+    border-radius: 4px;
+    border: #1259c3;
+    padding: 1%;
+    color:white;
+}
+
+.botonEnviarRegistro:hover{
+    background-color: #0022AA;
+    ;
+}
+
+.botonBorrarRegistro{
+    background-color: white;
+    width: 33.5%;
+    margin:15px;
+    font-weight:bold;
+    border-radius: 4px;
+    border: #1259c3;
+    padding: 1%;
+  
+    color:1259c3;
+}
